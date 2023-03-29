@@ -11453,6 +11453,8 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
+
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
@@ -11633,6 +11635,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
+
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
@@ -11664,6 +11667,8 @@ header.masthead .masthead-heading {
     text-align: left;
   }
 }
+
+
 @media (min-width: 992px) {
   .timeline > li {
     min-height: 150px;
@@ -11685,6 +11690,8 @@ header.masthead .masthead-heading {
     padding: 0 20px 20px;
   }
 }
+
+
 @media (min-width: 1200px) {
   .timeline > li {
     min-height: 170px;
@@ -11704,6 +11711,8 @@ header.masthead .masthead-heading {
     padding: 0 100px 20px 20px;
   }
 }
+
+
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
