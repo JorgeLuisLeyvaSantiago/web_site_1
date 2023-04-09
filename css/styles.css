@@ -3102,9 +3102,9 @@ textarea.form-control-lg {
   background:black;
 
   border-radius:20px;
-  animation-name: anim;
+  /* animation-name: anim;
   animation-duration: 8s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 .btn-primary:hover {
   color: #fff;
