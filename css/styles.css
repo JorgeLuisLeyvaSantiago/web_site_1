@@ -12091,11 +12091,19 @@ i{
 /* ########################### */
 
 body {
-	margin: 0;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80");
+
+  /* background: #f2f2f2 url("https://www.congresoemprendete.com/wp-content/uploads/2018/08/Mecatr%C3%B3nica-y-Rob%C3%B3tica_LQ.jpg") no-repeat center center fixed; */
+  background-size: cover;
+
+	/* margin: 0;
 	padding: 0;
   background: linear-gradient(to bottom right, #232526, #414345);
+  font-family: Arial, sans-serif; */
+
 	/* background: linear-gradient(to bottom, #4F4F4F, #000000); */
-	font-family: Arial, sans-serif;
+	
 }
 
 header {
@@ -12106,12 +12114,12 @@ header {
 	height: 100vh;
 }
 
-h1 {
+.h1_main {
 	font-size: 2.5rem;
 	color: white;
 	text-align: center;
-	margin-bottom: -4.5rem;
-  margin-top: 4.5rem;
+	/* margin-bottom: -4.5rem; */
+  margin-top: 5.5rem;
 }
 
 .p_main {
@@ -12124,12 +12132,12 @@ h1 {
 .cta-button {
 
   margin-bottom: 2.5rem;
-  margin-top: 0.8rem;
+  /* margin-top: 0.8rem; */
 
 	display: inline-block;
-	padding: 1rem 2rem;
+	padding: 1rem 5rem;
 	background-color: #FF4500;
-	border-radius: 25px;
+	/* border-radius: 25px; */
 	font-size: 1.2rem;
 	color: white;
 	text-decoration: none;
@@ -12147,7 +12155,10 @@ h1 {
 /* ################ */
 
 .profile-picture {
-	border-radius: 50%;
+	/* border-radius: 50%; */
+  
+  border-radius: 25px;
+
 	margin-top: -2em;
 	margin-bottom: 0.5em;
 }
