@@ -104,3 +104,43 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 
 }
+
+
+// ######################
+
+var slideInterval = setInterval(function() {
+    plusSlides(1);
+    // Se establece el intervalo de tiempo en 3000 milisegundos, lo que equivale a 3 segundos.
+  }, 3000);
+  
+  function pauseSlide() {
+    clearInterval(slideInterval);
+  }
+  
+  function resumeSlide() {
+    slideInterval = setInterval(function() {
+      plusSlides(1);
+    }, 4000);
+  }
+  
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    var slider = document.getElementsByClassName("slider")[0];
+    slider.addEventListener("mouseenter", function() {
+      pauseSlide();
+    });
+    slider.addEventListener("mouseleave", function() {
+      resumeSlide();
+    });
+  });
+  
+  function prevSlide() {
+    pauseSlide();
+    plusSlides(-1);
+    resumeSlide();
+  }
+  
+  function nextSlide() {
+    pauseSlide();
+    plusSlides(1);
+    resumeSlide();
+  }

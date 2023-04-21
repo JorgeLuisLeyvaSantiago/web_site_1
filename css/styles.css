@@ -11495,7 +11495,7 @@ header.masthead {
   padding-bottom: 2.3rem;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/master_view3.png"); /* background-image: url("../assets/img/master_view.png"); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/master_view3.png"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -12094,23 +12094,23 @@ i{
 
 /* ########################### */
 
-body {
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80");
+.body_portada {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://cdn.wallpapersafari.com/62/27/x1YRtm.jpeg"); */
+  /* background-size: cover; */
+  
+  /* background: linear-gradient(to bottom, #4F4F4F, #000000); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), transparent 85%, rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80");
 
   /* background: #f2f2f2 url("https://www.congresoemprendete.com/wp-content/uploads/2018/08/Mecatr%C3%B3nica-y-Rob%C3%B3tica_LQ.jpg") no-repeat center center fixed; */
-  background-size: cover;
 
 	/* margin: 0;
 	padding: 0;
   background: linear-gradient(to bottom right, #232526, #414345);
   font-family: Arial, sans-serif; */
-
-	/* background: linear-gradient(to bottom, #4F4F4F, #000000); */
 	
 }
 
-header {
+.header_portada {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -12139,7 +12139,7 @@ header {
 
 .cta-button {
 
-  font-family: cursive;
+  /* font-family: cursive; */
 
   margin-bottom: 2.5rem;
   /* margin-top: 0.8rem; */
@@ -12247,12 +12247,23 @@ header {
 
 	width: 350px;
 	height: 250px;
-	background: grey;
+	/* background: grey; */
 	top: 50%;
 	left: 50%;
 	/* transform: translate(-50%,-50%); */
 	/* position: absolute; */
+
+  /* display: flex; */
+  /* animation: cambio 20s infinite alternate linear; */
+  /* width: 10%; */
 }
+
+.slides {
+  display: flex;
+  overflow: hidden;
+}
+
+
 .mySlides{
   /* border-radius: 1.5rem; */
 	width: 350px;
@@ -12310,7 +12321,7 @@ header {
 
 }
 .active, .dot:hover{
-	background: #000;
+	background: #fff;
 }
 .fade_slide_portada{
 	animation-name: fade_slide_portada;
