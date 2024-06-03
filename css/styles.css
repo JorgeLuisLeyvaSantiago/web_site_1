@@ -11445,14 +11445,19 @@ p {
 #mainNav .navbar-brand img {
   height: 1.5rem;
 }
+
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
   color: #fff;
   letter-spacing: 0.0625em;
 }
+
+/* -- SOMBREADO DEL MENU AL AVANZAR EN SECCIONES -- */
+/* color: #ffc800; */
+/* color: #000000; */
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #000000;
 }
 
 @media (min-width: 992px) {
@@ -11940,33 +11945,30 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .contenedor_redes{
   margin: 0;
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(0%, -25%); */
   text-align: center;
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
 }
 
-i{
+/* i{
   border-radius: 50%;
   box-shadow: 0px 5px 10x rgba(0, 0, 0, .35);
   transition: .4s ease;
-}
+} */
 
 .contenedor_redes a{
-  text-decoration: none;
-  font-size: 14px;
-  width: 33px;
+  /* text-decoration: none;
+  font-size: 24px;
+  width: 43px;
   height: 33px;
   line-height: 35px;
   text-align: center;
 
-  background: #314652;
+  border-radius: 50%; */
+  /* background: #314652; */
   color: #f1f1f1;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  transition: all .4s ease-in-out;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out; */
 
   /* background: black;
   color: black;
@@ -11989,107 +11991,7 @@ i{
   transform: scale(1.4);
 } */
 
-.fa-twitter:hover{
 
-  filter: none;
-  transform: scale(1.4);
-
-  display: flex;
-  width: 33px;
-  height: 33px;
-  line-height: 35px;
-  text-align: center;
-  border-radius: 50%;
-  background: #1DA1F2;
-  color: black;
-  box-shadow: 0 0 15px  white,
-              0 0 45px  white,
-              0 0 75px  white,
-              0 0 115px white,
-  ;
-  /* transform: scale(1.5); */
-  /* filter: brightness(1); */
-}
-
-.fa-facebook-f:hover{
-
-  filter: none;
-  transform: scale(1.4);
-  
-  display: flex;
-  width: 33px;
-  height: 33px;
-  line-height: 35px;
-  text-align: center;
-  border-radius: 50%;
-  background: blue;
-  color: black;
-  box-shadow: 0 0 15px  white,
-              0 0 45px  white,
-              0 0 75px  white,
-              0 0 115px white,
-  ;
-}
-
-.fa-linkedin-in:hover{
-
-  filter: none;
-  transform: scale(1.4);
-  
-  display: flex;
-  width: 33px;
-  height: 33px;
-  line-height: 35px;
-  text-align: center;
-  border-radius: 50%;
-  background: #0077b5; 
-  color: white;
-  box-shadow: 0 0 15px  white,
-              0 0 45px  white,
-              0 0 75px  white,
-              0 0 115px white,
-  ;
-}
-
-.fa-instagram:hover{
-
-  filter: none;
-  transform: scale(1.4);
-  
-  display: flex;
-  width: 33px;
-  height: 33px;
-  line-height: 35px;
-  text-align: center;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  color: white;
-  box-shadow: 0 0 15px  white,
-              0 0 45px  white,
-              0 0 75px  white,
-              0 0 115px white,
-  ;
-}
-
-.fa-tiktok:hover{
-
-  filter: none;
-  transform: scale(1.4);
-  
-  display: flex;
-  width: 33px;
-  height: 33px;
-  line-height: 35px;
-  text-align: center;
-  border-radius: 50%;
-  background: black; 
-  color: white;
-  box-shadow: 0 0 15px  white,
-              0 0 45px  white,
-              0 0 75px  white,
-              0 0 115px white,
-  ;
-}
 
 
 /* ########################### */
@@ -12147,12 +12049,17 @@ i{
 	display: inline-block;
 	padding: 1rem 5rem;
 	background-color: #FF4500;
-	/* border-radius: 25px; */
+	border-radius: 25px;
 	font-size: 1.2rem;
 	color: white;
 	text-decoration: none;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 	transition: all 0.3s ease;
+
+  animation: bounce 2s linear infinite;
+
+  /* animation: pulse 2s infinite; */
+  /* animation: pulse 0.85s ease-in-out infinite; */
 }
 
 .cta-button:hover {
@@ -12335,3 +12242,13 @@ i{
 		opacity: 1;
 	}
 }
+
+@keyframes bounce {
+  0%, 25%, 50%, 75%, 90%, 100% {
+  transform: translateY(0); }
+  15%,40% {
+  transform: translateY(-5px); }
+  65% ,80% {
+  transform: translateY(-5px); }
+  95% {
+  transform: translateY(-5px); } }
